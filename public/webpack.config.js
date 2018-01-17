@@ -45,7 +45,7 @@ module.exports = {
   // For development https://webpack.js.org/configuration/devtool/#for-development
   devtool: 'inline-source-map',
   devServer: {
-    port: 8080
+    port: 8081
   },
   plugins: [
     new HtmlWebpackPlugin({

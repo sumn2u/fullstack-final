@@ -25,6 +25,25 @@ xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 xhr.send(params);
 return xhr;
 }
+
+//get ajax
+function getAjax(url, data, success, error) {
+var params = typeof data == 'string' ? data : Object.keys(data).map(
+      function(k){ return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]) }
+  ).join('&');
+
+var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
+xhr.open('GET', url);
+xhr.onreadystatechange = function() {
+  if (xhr.readyState>3 && xhr.status==200) { success(JSON.parse(xhr.responseText)); }
+ if (xhr.readyState>3 && xhr.status== 500) { error(JSON.parse(xhr.responseText)); }
+};
+xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+xhr.setRequestHeader('Authorization', 'Basic ' + btoa('lm$cl!3nt' + ':' + 'lm$s3creT'));
+xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+xhr.send(params);
+return xhr;
+}
 //check email
 function checkEmail(){
 var status = false;
@@ -71,8 +90,22 @@ let userData = {
   password:document.accountLogin.password.value,
   device_id:'abcd'
 }
-postAjax('abc.php', userData, function(data){
+postAjax('http://localhost:9000/api/authenticate', userData, function(data){
    // console.log(data); success
+
+   document.getElementById('users-list').style.display = 'block'
+   document.getElementById('login-id').style.display = 'none'
+    getAjax('http://localhost:9000/api/users', {}, function(data){
+      // console.log("data");
+      var printThis = "";
+        for(var i = 0; i < data.length; i++){
+             printThis += "<br>"+data[i].name;
+        }
+
+      document.getElementById("user-list-data").innerHTML=printThis;
+
+      // debugger;
+    })
 
  }, function(data){
     document.getElementById("userPasswordWrong").style.display = "block";
