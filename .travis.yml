@@ -1,0 +1,20 @@
+sudo: required
+dist: trusty
+language: node_js
+
+node_js:
+  # LTS version
+  - "8.9.0"
+
+cache:
+  directories:
+  - node_modules
+
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $github_token
+  local_dir: public/dist
+  on:
+    branch: master
