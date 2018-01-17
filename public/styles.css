@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  background: #0facf3;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+.main-header {
+  background: #fff;
+  padding: 15px 0;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.main-header .logo {
+  width: 130px;
+  display: block;
+}
+.main-header .logo img {
+  width: 100%;
+}
+.main-cnt {
+  padding: 60px 0;
+  overflow: hidden;
+}
+.main-cnt .col-left,
+.main-cnt .col-right{
+  float: left;
+  width: 50%;
+}
+.main-cnt .col-left {
+  padding: 40px 50px 40px 0;
+  color: #fff;
+}
+.main-cnt .col-left h2 {
+  font-family: Open Sans,sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+.main-cnt .col-left p {
+  font-family: Open Sans,sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.71;
+  margin-bottom: 10px;
+}
+.main-cnt .col-right {
+  background: #fff;
+  border-radius: 3px;
+}
+.main-cnt .col-right h3 {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #9facbd;
+  letter-spacing: .1px;
+  padding: 15px 0;
+  margin: 0;
+  border-bottom: 1px solid #0facf3;
+  background: #f2f8ff;
+}
+.main-cnt .col-right form {
+  padding: 40px;
+}
+.main-cnt .col-right .form-group {
+  margin-bottom: 30px;
+}
+.main-cnt .col-right .form-group label {
+  font-family: Open Sans,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  color: #5f6c72;
+  padding: 3px 0;
+  display: block;
+}
+.main-cnt .col-right .form-group input {
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  padding: 5px 15px;
+  height: 40px;
+  display: block;
+  width: 100%;
+  font-size: 14px;
+}
+.main-cnt .col-right .form-group .required {
+  display: block;
+  color:red;
+  font-size: 13px;
+
+}
+.btn-blue {
+  background: #0facf3;
+  color: hsla(0,0%,100%,.8);
+  border: 1px solid rgba(0,0,0,.1);
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 12px 48px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.btn-blue:hover {
+  background: rgba(15,172,243,.9);
+  color: #fff;
+}
+.user-pass-wrong {
+  font-size: 13px;
+  color: red;
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  background: #ffe7e7;
+}
