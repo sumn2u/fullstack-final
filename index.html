@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -15,50 +17,309 @@
 
   <!-- Styles -->
   <style>
-  	*{margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box}body{background:#0facf3;font-family:'Open Sans',sans-serif;font-size:16px}.main-header{background:#fff;padding:15px 0}.container{max-width:1170px;margin:0 auto;padding:0 30px}.main-header .logo{width:130px;display:block}.main-header .logo img{width:100%}.main-cnt{padding:60px 0;overflow:hidden}.main-cnt .col-left,.main-cnt .col-right{float:left;width:50%}.main-cnt .col-left{padding:40px 50px 40px 0;color:#fff}.main-cnt .col-left h2{font-family:Open Sans,sans-serif;font-size:40px;font-weight:600;line-height:normal;margin-bottom:10px}.main-cnt .col-left p{font-family:Open Sans,sans-serif;font-size:22px;font-weight:300;line-height:1.71;margin-bottom:10px}.main-cnt .col-right{background:#fff;border-radius:3px}.main-cnt .col-right h3{display:block;text-align:center;text-transform:uppercase;font-weight:500;color:#9facbd;letter-spacing:.1px;padding:15px 0;margin:0;border-bottom:1px solid #0facf3;background:#f2f8ff}.main-cnt .col-right form{padding:40px}.main-cnt .col-right .form-group{margin-bottom:30px}.main-cnt .col-right .form-group label{font-family:Open Sans,sans-serif;font-size:14px;font-weight:500;line-height:normal;color:#5f6c72;padding:3px 0;display:block}.main-cnt .col-right .form-group input{background:#fff;border:1px solid #dbdbdb;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;-o-border-radius:3px;padding:5px 15px;height:40px;display:block;width:100%;font-size:14px}.main-cnt .col-right .form-group .required{display:block;color:red;font-size:13px}.btn-blue{background:#0facf3;color:hsla(0,0%,100%,.8);border:1px solid rgba(0,0,0,.1);width:100%;text-align:center;text-transform:uppercase;padding:12px 48px;font-size:14px;cursor:pointer}.btn-blue:hover{background:rgba(15,172,243,.9);color:#fff}.user-pass-wrong{font-size:13px;color:red;margin-bottom:15px;padding:10px 15px;background:#ffe7e7}
-  </style>
- 
-</head>
+    * {
+      margin: 0;
+      padding: 0;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    body {
+      background: #0facf3;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+    }
+    .main-header {
+      background: #fff;
+      padding: 15px 0;
+    }
+    .container {
+      max-width: 1170px;
+      margin: 0 auto;
+      padding: 0 30px;
+    }
+    .main-header .logo {
+      width: 130px;
+      display: block;
+    }
+    .main-header .logo img {
+      width: 100%;
+    }
+    .main-cnt {
+      padding: 60px 0;
+      overflow: hidden;
+    }
+    .main-cnt .col-left,
+    .main-cnt .col-right{
+      float: left;
+      width: 50%;
+    }
+    .main-cnt .col-left {
+      padding: 40px 50px 40px 0;
+      color: #fff;
+    }
+    .main-cnt .col-left h2 {
+      font-family: Open Sans,sans-serif;
+      font-size: 40px;
+      font-weight: 600;
+      line-height: normal;
+      margin-bottom: 10px;
+    }
+    .main-cnt .col-left p {
+      font-family: Open Sans,sans-serif;
+      font-size: 22px;
+      font-weight: 300;
+      line-height: 1.71;
+      margin-bottom: 10px;
+    }
+    .main-cnt .col-right {
+      background: #fff;
+      border-radius: 3px;
+    }
+    .main-cnt .col-right h3 {
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: #9facbd;
+      letter-spacing: .1px;
+      padding: 15px 0;
+      margin: 0;
+      border-bottom: 1px solid #0facf3;
+      background: #f2f8ff;
+    }
+    .main-cnt .col-right form {
+      padding: 40px;
+    }
+    .main-cnt .col-right .form-group {
+      margin-bottom: 30px;
+    }
+    .main-cnt .col-right .form-group label {
+      font-family: Open Sans,sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: normal;
+      color: #5f6c72;
+      padding: 3px 0;
+      display: block;
+    }
+    .main-cnt .col-right .form-group input {
+      background: #fff;
+      border: 1px solid #dbdbdb;
+      border-radius: 3px;
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -o-border-radius: 3px;
+      padding: 5px 15px;
+      height: 40px;
+      display: block;
+      width: 100%;
+      font-size: 14px;
+    }
+    .main-cnt .col-right .form-group .required {
+      display: block;
+      color:red;
+      font-size: 13px;
 
+    }
+    .btn-blue {
+      background: #0facf3;
+      color: hsla(0,0%,100%,.8);
+      border: 1px solid rgba(0,0,0,.1);
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 12px 48px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .btn-blue:hover {
+      background: rgba(15,172,243,.9);
+      color: #fff;
+    }
+    .user-pass-wrong {
+      font-size: 13px;
+      color: red;
+      margin-bottom: 15px;
+      padding: 10px 15px;
+      background: #ffe7e7;
+      display:none;
+    }
+  </style>
+</head>
 <body>
-  <div class="main-header">
-  	<div class="container">
-  		<a class="logo" href="#"><img src="fuseacademy.svg" alt=""></a>
-  	</div>
+   <div class="main-header">
+    <div class="container">
+      <a class="logo" ><img src="https://accounts.fusemachines.com/images/logo.svg" alt=""></a>
+    </div>
   </div>
   <div class="main-cnt">
-  	<div class="container">
-  		<div class="col-left">
-  			<h2>Imagine your future!<br>
+    <div class="container">
+      <div class="col-left">
+        <h2>Imagine your future!<br>
         And build it with us.</h2>
         <p style="margin-bottom: 40px;">What do you want to learn today?</p>
         <p>What's your dream job? <br> Discover the program that's right for you!</p>
-  		</div>
-  		<div class="col-right">
-  			<h3>Sign In</h3>
-  			<form id="account-login" name="accountLogin" autocomplete="off">
-           <div class="user-pass-wrong" id="userPasswordWrong">
-              Bad Credentials !!
+      </div>
+      <div class="col-right">
+        <h3>Sign In</h3>
+        <form id="account-login" name="accountLogin" autocomplete="off">
+           <div class="user-pass-wrong" id="error-message">
+
            </div>
           <div class="form-group">
             <label for="exampleInputEmail1">Email</label>
-            <input type="text" class="form-control" id="emailInput" name="email"  placeholder="example@email.com" value="" >
-            <span id="emailRequired" class="required">Please enter your email address.</span>
+            <input type="text" class="form-control" id="email" name="email"  placeholder="example@email.com" value="" >
           </div>
           <div class="form-group error">
             <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="passwordInput" name="password" placeholder="*******">
-          <span id="passwordRequired" class="required">Please enter your password.</span>
+            <input type="password" class="form-control" id="password" name="password" placeholder="*******">
           </div>
-          <button type="submit" class="btn-blue" id="signingIn">Sign In</button>
+          <button type="button" class="btn-blue" id="btn-login">Sign In</button>
+  <!--<button
+          type="submit"
+          id="btn-login"
+          class="btn btn-primary btn-block">
+            Log In
+        </button>
+        <button
+          type="button"
+          id="btn-signup"
+          class="btn btn-default btn-block">
+            Sign Up
+        </button>
+        <hr>
+        <button
+          type="button"
+          id="btn-google"
+          class="btn btn-default btn-danger btn-block">
+            Log In with Google
+        </button> -->
         </form>
-  		</div>
-  	</div>
+      </div>
+    </div>
   </div>
+  <!-- code sell -->
+  <!--<div class="login-container">
+    <div class="col-xs-12 col-sm-4 col-sm-offset-4 login-box">
+      <div class="login-header">
+        <img src="https://cdn.auth0.com/styleguide/1.0.0/img/badge.svg"/>
+        <h3>Welcome</h3>
+        <h5>PLEASE LOG IN</h5>
+      </div>
+      <div id="error-message" class="alert alert-danger"></div>
+      <form>
+        <div class="form-group">
+         <label for="name">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label for="name">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="Enter your password">
+        </div>
+        <button
+          type="submit"
+          id="btn-login"
+          class="btn btn-primary btn-block">
+            Log In
+        </button>
+        <button
+          type="button"
+          id="btn-signup"
+          class="btn btn-default btn-block">
+            Sign Up
+        </button>
+        <hr>
+        <button
+          type="button"
+          id="btn-google"
+          class="btn btn-default btn-danger btn-block">
+            Log In with Google
+        </button>
+      </form>
+    </div>
+  </div> -->
+
+  <!--[if IE 8]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ie8/0.2.5/ie8.js"></script>
+  <![endif]-->
+
+  <!--[if lte IE 9]>
+  <script src="https://cdn.auth0.com/js/polyfills/1.0/base64.min.js"></script>
+  <script src="https://cdn.auth0.com/js/polyfills/1.0/es5-shim.min.js"></script>
+  <![endif]-->
+
+  <script src="https://cdn.auth0.com/js/auth0/8.7/auth0.min.js"></script>
+  <script src="https://cdn.auth0.com/js/polyfills/1.0/object-assign.min.js"></script>
   <script>
-    document.getElementById("account-login").addEventListener("submit",checkLogin),document.getElementById("emailInput").addEventListener("keypress",checkEmail),document.getElementById("passwordInput").addEventListener("keyup",checkPassword);function postAjax(e,t,n,o){var s="string"==typeof t?t:Object.keys(t).map(function(e){return encodeURIComponent(e)+"="+encodeURIComponent(t[e])}).join("&"),a=window.XMLHttpRequest?new XMLHttpRequest:new ActiveXObject("Microsoft.XMLHTTP");return a.open("POST",e),a.onreadystatechange=function(){a.readyState>3&&200==a.status&&n(JSON.parse(a.responseText)),a.readyState>3&&500==a.status&&o(JSON.parse(a.responseText))},a.setRequestHeader("X-Requested-With","XMLHttpRequest"),a.setRequestHeader("Authorization","Basic "+btoa("lm$cl!3nt:lm$s3creT")),a.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),a.send(s),a}function checkEmail(){var e=!1,t=document.accountLogin.email.value,n=document.getElementById("emailRequired");return document.getElementById("userPasswordWrong").style.display="none",t.length>=1&&-1==t.search(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i)?(n.innerHTML="Invalid email address.",n.style.display="block"):t.length<=0?(n.innerHTML="Please enter your email address.",n.style.display="block"):(n.style.display="none",e=!0),e}function checkPassword(){var e=!1,t=document.accountLogin.password.value,n=document.getElementById("passwordRequired");return document.getElementById("userPasswordWrong").style.display="none",t.length<=0?n.style.display="block":(n.style.display="none",e=!0),e}function checkLogin(e){if(e.preventDefault(),checkPassword(),checkEmail()&&checkPassword()){document.getElementById("signingIn").innerHTML="SIGNING IN";postAjax("https://central-auth-dev-api.fusemachines.com/oauth/fusetoken",{grant_type:"password",username:document.accountLogin.email.value,password:document.accountLogin.password.value,device_id:"abcd"},function(e){localStorage.setItem("access_token",e.access_token),localStorage.setItem("refresh_token",e.refresh_token),localStorage.setItem("session_id",e.session_id),document.getElementById("signingIn").innerHTML="SIGNED IN",location.search.length>1&&(localStorage.setItem("redirectUrl",decodeURI(location.search.split("=")[1])),location.href=location.search.split("=")[1])},function(e){document.getElementById("userPasswordWrong").style.display="block"})}return!1}clearErrors(),checkUrl();function clearErrors(){document.getElementById("emailRequired").style.display="none",document.getElementById("passwordRequired").style.display="none",document.getElementById("userPasswordWrong").style.display="none",document.getElementById("signingIn").innerHTML="SIGN IN"}function checkUrl(){"/logout"==location.pathname&&(localStorage.clear(),location.href="")}function makeConnection(){CrossStorageHub.init([{origin:/localhost:4200$/,allow:["get","set","del","getKeys","clear"]},{origin:/localhost:3000$/,allow:["get","set","del","getKeys","clear"]},{origin:/.*cloudfront.net$/,allow:["get","set","del","getKeys","clear"]},{origin:/.*fusemachines.com$/,allow:["get","set","del","getKeys","clear"]}])}
+    window.addEventListener('load', function() {
+
+      var config = JSON.parse(
+        decodeURIComponent(escape(window.atob('@@config@@')))
+      );
+
+      var params = Object.assign({
+        domain: config.auth0Domain,
+        clientID: config.clientID,
+        redirectUri: config.callbackURL,
+        responseType: 'code'
+      }, config.internalOptions);
+
+      var webAuth = new auth0.WebAuth(params);
+
+      var databaseConnection = 'Username-Password-Authentication';
+
+      function login(e) {
+        e.preventDefault();
+        var username = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+        webAuth.redirect.loginWithCredentials({
+          connection: databaseConnection,
+          username: username,
+          password: password
+        }, function(err) {
+          if (err) displayError(err);
+        });
+      }
+
+      function signup() {
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+
+        webAuth.redirect.signupAndLogin({
+          connection: databaseConnection,
+          email: email,
+          password: password
+        }, function(err) {
+          if (err) displayError(err);
+        });
+      }
+
+      function loginWithGoogle() {
+        webAuth.authorize({
+          connection: 'google-oauth2'
+        }, function(err) {
+          if (err) displayError(err);
+        });
+      }
+
+      function displayError(err) {
+        var errorMessage = document.getElementById('error-message');
+        errorMessage.innerHTML = err.description;
+        errorMessage.style.display = 'block';
+      }
+
+      document.getElementById('btn-login').addEventListener('click', login);
+      document.getElementById('btn-google').addEventListener('click', loginWithGoogle);
+      document.getElementById('btn-signup').addEventListener('click', signup);
+    });
   </script>
 </body>
-
-
 </html>
